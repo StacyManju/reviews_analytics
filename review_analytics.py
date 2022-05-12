@@ -35,3 +35,12 @@ for d in data:
         good.append(d)
 print('一共有', len(good), '筆留言有提到good')
 print(good[0])
+
+good2 = [d for d in data if 'good' in d]
+print(good2)
+
+good3 = [1 for d in data if 'good' in d]
+print(good3)
+
+bad = ['bad' in d for d in data]
+print(bad)
